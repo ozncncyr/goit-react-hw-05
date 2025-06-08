@@ -6,7 +6,7 @@ const ErrorNavigation = () => {
 
   const handleClick = () => navigation("/");
   return (
-    <div>
+    <div className="btnWrap">
       <button onClick={handleClick} className="btn">
         {" "}
         Return to Home{" "}
@@ -17,7 +17,7 @@ const ErrorNavigation = () => {
 
 const NotFoundPage = () => {
   return (
-    <div>
+    <div className="container">
       <div class="face">
         <div class="band">
           <div class="red"></div>

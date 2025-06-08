@@ -136,7 +136,7 @@
 
 .error {
     font-weight: 800;
-    color: #4a4d57;
+    color: #ffffff;
     text-align: center;
     font-size: 2.5em;
     padding-top: 20px;
@@ -152,7 +152,7 @@
     font-family: "Open Sans";
     font-weight: 600;
     padding: 20px;
-    background-color: rgb(70, 75, 88);
+    background-color: #ff1867;
     color: white;
     width: 240px;
     margin: 0 auto;
@@ -167,5 +167,13 @@
 }
 
 .btn:hover {
-    background-color: rgba(94, 127, 220, 1.0);
+    background-color: #7e0632;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
