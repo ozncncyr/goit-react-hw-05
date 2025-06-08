@@ -22,6 +22,14 @@ const Navigation = () => {
           </NavLink>
         </li>
       </ul>
+      <h1 className={styles.webTitle}>Ozzie's MovieDB</h1>
+      <div className={styles.webLogo}>
+        <h2>Powered by </h2>
+        <img
+          height={"30px"}
+          src="https://www.drupal.org/files/project-images/29c6fee-blue_short.png"
+        ></img>
+      </div>
     </nav>
   );
 };

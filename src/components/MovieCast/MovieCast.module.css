@@ -1,0 +1,51 @@
+.castContainer {
+    width: 580px;
+    overflow-y: auto;
+    height: 750px;
+    padding-left: 20px;
+}
+
+.castList {
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+        flex-wrap: wrap;
+        gap:  10px;
+}
+
+.castItem {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.actorImage {
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.actorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.actorName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.actorRole {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}

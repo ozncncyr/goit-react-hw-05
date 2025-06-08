@@ -1,0 +1,26 @@
+.list{
+    list-style-type: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 0;
+    width: 500px;
+}
+
+.item{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item h4{
+    color: yellow;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item p{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}

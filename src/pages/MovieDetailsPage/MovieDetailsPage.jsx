@@ -22,7 +22,7 @@ const MovieDetailsPage = () => {
     fetchMovieDetails(movieId).then(setMovie).catch(console.error);
   }, [movieId]);
 
-  if (!movie) return <MoonLoader color="#a020f0" />;
+  if (!movie) return <MoonLoader color="white" />;
 
   return (
     <div className={styles.container}>
@@ -49,7 +49,7 @@ const MovieDetailsPage = () => {
               return (
                 logo_path && (
                   <img
-                    width={100}
+                    className={styles.producerLogo}
                     key={index}
                     src={"https://image.tmdb.org/t/p/w500/" + logo_path}
                   />
@@ -74,24 +74,23 @@ const MovieDetailsPage = () => {
             </Link>
           </div>
         </div>
-      </div>
+        <div className={styles.castReviewsContainer}>
+          {isReviewsPage && (
+            <div className={styles.reviews}>
+              <Suspense fallback={<MoonLoader color="white" />}>
+                <Outlet />
+              </Suspense>
+            </div>
+          )}
 
-      <div className={styles.castReviewsContainer}>
-        {isReviewsPage && (
-          <div className={styles.reviews}>
-            <Suspense fallback={<MoonLoader color="#a020f0" />}>
-              <Outlet />
-            </Suspense>
-          </div>
-        )}
-
-        {isCastPage && (
-          <div className={styles.cast}>
-            <Suspense fallback={<MoonLoader color="#a020f0" />}>
-              <Outlet />
-            </Suspense>
-          </div>
-        )}
+          {isCastPage && (
+            <div className={styles.cast}>
+              <Suspense fallback={<MoonLoader color="white" />}>
+                <Outlet />
+              </Suspense>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
