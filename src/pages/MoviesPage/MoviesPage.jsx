@@ -50,7 +50,7 @@ const MoviesPage = () => {
           onChange={(e) => setSearchParams({ query: e.target.value })}
           placeholder="Search for movies..."
         />
-        <button type="submit">Search</button>
+        {/* <button type="submit">Search</button> */}
       </form>
 
       {loading ? <p>Loading...</p> : <MovieList movies={movies} />}
